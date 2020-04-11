@@ -7,7 +7,7 @@ on:
       - master
       
   schedule:
-  - cron: "12 * * * *"
+  - cron: "0 5,17 * * *"
 
 jobs:
   auto_commit:
@@ -29,14 +29,14 @@ jobs:
           git config --local user.name "alimuamar11"
           git add -A
           
-          arr[0]="feat: 😂 auto commit"
-          arr[1]="feat: 😱 auto commit"
-          arr[2]="feat: 👿 auto commit"
-          arr[3]="feat: 💩 auto commit"
-          arr[4]="feat: 🙏 auto commit"
-          arr[5]="feat: 🙈 auto commit"
-          arr[6]="feat: 🐐 auto commit"
-          arr[7]="feat: 🚀 auto commit"
+          arr[0]="feat: 😂 Good Morning"
+          arr[1]="feat: 😱 Have a nice day"
+          arr[2]="feat: 👿 Good Morning"
+          arr[3]="feat: 💩 Be Gratefull"
+          arr[4]="feat: 🙏 Have a nice day"
+          arr[5]="feat: 🙈 Don't be shy"
+          arr[6]="feat: 🐐 Run run run"
+          arr[7]="feat: 🚀 Good Afternoon"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
